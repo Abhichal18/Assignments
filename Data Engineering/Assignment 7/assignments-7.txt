@@ -1,0 +1,52 @@
+Instructions
+.............................
+
+
+i. Write command and execute and paste screen shots and make a pdf. You need to show screen shot to deonstrate the correctness of your code/query. 
+
+
+ii. Submit one file .pdf file containing all answers. The name should be <student_name>_assignment<number>.pdf
+
+
+iii. Write the questions before the answers.
+
+
+iv. Write a justification of your solution, otherwise you will get penalty.
+
+
+v. Give one example input and output if applicable.
+
+
+vi. The code should be executable and show output.
+
+
+vii. In this assignment, marks will be deducted for mistakes instead of awarding marks for correctness
+
+
+
+
+Tasks
+.............................
+
+
+1. Create a procedure which will be used by a system admin wheneven a new student joins. The procedure will create a view such that, each student can see details of all students except their total credit, but the student can see all information about him/her. Demonstrate this procedure with examples. [3]
+
+exit;
+
+2. Can we solve the above task using role ? Justify your answer with examples using university database and executing commands. [1]
+
+
+3. Demonstrate transaction using university database on instructor table. You can choose your case but explain it properly. [1]
+
+
+delimiter #
+MariaDB [university]> create or replace procedure details(name varchar(20))
+    -> begin
+    -> create or replace table duplicate like student;
+    -> update duplicate set tot_cred=NULL where duplicate.name=name;
+    -> create or replace view detail as select * from duplicate;
+    -> end;
+    -> #
+
+create user abhichal identified by 'iamabhichal';
+grant select on university.detail to 'abhichal'@'root'
