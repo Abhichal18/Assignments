@@ -1,0 +1,37 @@
+*******************************INSTRUCTIONS******************************************
+
+1. Use only the packages used in today's demonstration.
+2. Submit single notebook(.ipynb) with format <Your_name>_Assignment_10.ipynb and a text file <Your_name>_Mycobacterium_tuberculosis_protein.txt for Q3. Since the file size will exceed 2MB, mail me your solutions instead of uploading on Moodle. My mail ID: 111913002@smail.iitpkd.ac.in
+3. Make sure to remove newline ("\n") characters from the FASTA text files otherwise you'll encounter error.
+4. Marks distribution:
+i) Q1: 2 marks
+ii) Q2: 1 mark
+iii) Q3: 2 marks
+
+*************************************************************************************
+
+Q1. The GC-content of a DNA string is given by the percentage of symbols in the string that are 'C' or 'G'. For example, the GC-content of "AGCTATAG" is 37.5%. Note that the reverse complement of any DNA string has the same GC-content. Write a python function "computeGCFromFASTA()" to include below points.
+Input to this function must be a FASTA file. Use folder GC_FASTA for the input files. Compute for all the four files. All the four files contain DNA sequence.
+i) Check and print the validity of the FASTA text file. If the file is invalid, clean it by removing the unwanted characters.
+ii) Compute and print the length of the DNA sequence.
+iii) Make a bar plot for the count of the Nucleotides.
+iv) Print the GC Content as described above.
+Note: Make your code modular. Make different functions for all the above points and call them in the function computeGCFromFASTA().
+
+Q2. For various biological processes, certain nucleotide strings appear surprisingly often in small regions of the genome. This is often because certain proteins can only bind to DNA if a specific string of nucleotides is present, and if there are more occurrences of the string, then it is more likely that binding will successfully occur. (It is also less likely that a mutation will disrupt the binding process.)
+For example, "ACTAT" is a surprisingly frequent substring of "ACAACTATGCATACTATCGGGAACTATCCT".
+
+We use the term k-mer for a string of length k. Write a python function "PatternCount(Pattern, Text)" which takes two inputs from the user as follows:
+i) a k-mer as Pattern
+ii) and a DNA sequence as Text
+and outputs the number of times that the k-mer Pattern appears as a substring in Text. Following the above example,
+
+PatternCount("ACTAT", "ACAACTATGCATACTATCGGGAACTATCCT") = 3.
+
+Note that PatternCount("ATA", "CGATATATCCATAG") is equal to 3 (not 2) since we should account for overlapping occurrences of Pattern in Text.
+
+Q3. Use the given file "Mycobacterium_tuberculosis_49-02_complete_genome.txt" for this. Write a python function:
+i) "translateDNAToAminoAcid()" which takes as input a FASTA text file and translates the DNA sequence string to sequence of Amino Acids using DNA Codons. Note that it is a comparatively bigger file so no need to print any of the sequences. Store the Amino Acid sequence obtained in a new file "<Your_name>_Mycobacterium_tuberculosis_protein.txt".
+ii) "computeAminoAcidFreqency()" which takes as input the Amino Acid sequence obtained from above function and computes the frequency of each Amino Acid (refer to the DNA codon table given below) and outputs the most frequent Amino Acid.
+
+Refer to the DNA Codon Table from this source: https://en.wikipedia.org/wiki/DNA_codon_table#Standard_DNA_codon_table.
