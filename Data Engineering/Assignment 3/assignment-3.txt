@@ -1,0 +1,41 @@
+Instructions
+.............................
+
+
+i. Write comments and name variables appropriately, otherwise you will get penalty.
+
+ii. Submit one file .ipynb file containing all answers. The name should be <student_name>_assignment2.ipynb
+
+iii. Write the questions before the answers.
+
+iv. Write a justification of your solution, otherwise you will get penalty.
+
+v. Give one example input and output
+
+vi. The code should be executable and show output
+
+vii. Use functions to modularize your code.
+
+viii. Take input from users. 
+
+
+
+
+
+Tasks
+
+................................................................
+
+
+1. Implement insertion sort, selection sort, bubble sort. Test with arrays of sizes 10, 100, 1000, 10000. Use same array for all sorting algorithms and print time taken by each of them. 
+
+
+
+2. Download a news tweet data set  from this repository: https://archive.ics.uci.edu/ml/datasets/Health+News+in+Twitter. Unzip it and find 16 txt files. Read about this dataset from the repo website. Clean the dataset to consider only the tweet texts. Convert all characters to small case. Remove special characters and punctuations. Keep each processed tweet in one line. For each word compute inverse document frequency (IDF, read here: https://en.wikipedia.org/wiki/Tf%E2%80%93idf). Build a graph where words are nodes, and there is an edge between two nodes if they have co-occurred in a tweet. The node values are IDF scores of the words.  The edge values are number of tweets in which the vertices have co-occurred. You have to share the preprocessed text file and also a txt file containing the graph. You are free to choose how to describe the graph there. A visual representation of the graph will attract 1 bonus point. You are not supposed to use any libraries here except for the visualization part.
+
+
+
+
+3. Implement binary search for searching a word from a text file. You are free to choose the required data structures and you can use the cleaned files from the above question. Test it using the bbchealth file. Justify your approach.
+
+
