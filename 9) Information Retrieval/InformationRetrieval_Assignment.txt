@@ -1,0 +1,34 @@
+*******************************INSTRUCTIONS******************************************
+
+1. Use only the packages used in todays demonstration.
+2. In all sub tasks subsequent operations will be done on the output of previous task, unless explicitly mentioned.
+3. Submit single notebook(.ipynb) with format <Your_name>_Assignment_9.txt
+4. Each question contains 2.5 marks.
+
+*************************************************************************************
+
+Q1. From nltk.book use text2: 'Sense and Sensibility by Jane Austen' for the following task. (Here you can take a look at contents using 'text2.tokens', just to get idea about data)
+	i. Tokenize the data into words.
+	ii. Remove all tokens which are stopwords or non alphanumeric characters.
+	iii. Convert all words to lowercase.
+	iv. Apply and compare Porter Stemmer and Lancaster Stemmer on top 50 most frequent words. Choose the one that better suits your data and apply on the entire dataset.
+	v. Count the dataset size and the vocabulary size. Find the lexical diversity i.e. the ratio of vocabulary count to that of overall word count.
+	vi. Count the occurance of the word 'benevolent', 'esteem', 'smith' and 'valley'. 
+	vii. Display the percentage of occurance of the word 'hope' in the dataset.
+	viii. Display the top 10 most frequent bigrams. (Use entire text2 here) 
+	ix. Display the dispersion plot for the top 5 most frequent words. (Use entire text2 here)
+	x. Using regular expressions, find all words that begin with 'h' and ends with 'n' or those which begin with 's' and end with 'y'. Use only single regular expression. 
+	
+	
+
+Q2. From Gutenberg project, read the 'blake-poems.txt' as raw data. Perform following operations on the same:
+	i. Tokenize the data into sentences.
+	ii. For each tokenized sentence remove white-space characters.
+	iii. For each tokenized sentence remove punctuation marks.
+	iv. Convert all words to lower-case. 
+	v. Remove 'stopwords' from the sentences. 
+	vi. Remove all non-alpha numeric characters from the sentences.
+	vii. Find the occurance (with relevant context) of the words 'garden', 'crimson', 'beast', 'love' and 'zeal' in the data.
+	viii. Count the number of occurance of the word 'Blake' in entire document.
+	ix. Find frequency distribution of words in the document and display the 10 most frequent words with their frequency count.
+	x. Define a regular expression to find words beginning with 'p' and ending with 'e'. Show examples of the functions: match(), search(), findall() and finditer() for the same.

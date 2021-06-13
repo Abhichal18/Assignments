@@ -1,0 +1,99 @@
+﻿Instructions
+.............................
+
+i. Write command and execute and paste screen shots and make a pdf. You need to show screen shot to deonstrate the correctness of your code/query.
+
+ii. Submit one file .pdf file containing all answers. The name should be <student_name>_assignment<number>.pdf
+
+iii. Write the questions before the answers.
+
+iv. Write a justification of your solution, otherwise you will get penalty.
+
+v. Give one example input and output if applicable.
+
+vi. The code should be executable and show output.
+
+vii. In this assignment, marks will be deducted for mistakes instead of awarding marks for correctness
+
+
+
+
+Tasks
+.............................
+
+
+--1. Use MariaDB. 
+	
+a. Create restaurant database. 
+	
+b. In that create menu table. Insert 5 records. 
+	
+c. Create another table of your choice and insert 5 records. 
+	
+d. Modify one record, and delete one record from the menu table. 
+	
+e. Drop menu table. 
+	
+f. Drop the restaurant database.
+ 
+
+
+2. Use MariaDB and university database provided. 
+	
+--a. Show students who have taken courses in both 2009 and 2010.
+	
+--b. Count number of departments.
+	
+--c. Show departments in the descending order of budget.
+	
+d. Display records in the ‘takes’ table where order of grade as following [S, A+, A,A-, B+,B,B-, .....]
+	
+--e. Find out students ID who has taken some courses in both 2009 and 2010.
+	
+--f. Show departments which have budget greater than average budget
+	
+--g. Display all courses taught by ‘Srinivasan’
+	
+--h. Display all instructors who have taught in 2009. (Hint. display an instructor onceeven if he has taught more than once).
+	
+--i. Display all the instructors who have taught only once.
+	
+--j. Display all the instructors who have taught two or more courses.
+	
+--k. Display all the instructors whose name starts with ‘C’.
+	
+--l. Display all instructors whose salary is between 60,000 and 80,000 (inclusive).
+	
+--m. Correct the name of the instructor from ‘Singh’ to ‘Sing’
+	
+--n. Delete the course ‘Biology’
+	
+--o. Backup university database.
+
+
+
+3. Use MongoDB (you can use Python interface)
+	
+--a. Import data into test database corresponding to a ​restaurants​ collection using theprimer-dataset.json file
+	
+--b. List all the attributes in ​restaurants ​ collection
+	
+--c. Count total number of restaurants
+	
+--d. Count number of restaurants with ​American cuisine
+	
+--e. Show the number of restaurants corresponding to each cuisine
+	
+--f. Count number of ​Hawaiian​ cuisine restaurants with ​grade=A
+	
+--g. Show the number of restaurants corresponding to each cuisine using ‘cursor’ mode (youcan view it in parts and show more like setting) in sorted order so that highest numbercuisines appear first.
+	
+--h. Show cuisines with restaurants more than 100.
+
+
+
+{"address": 
+	{"building": "1007", "coord": [-73.856077, 40.848447], "street": "Morris Park Ave", 	"zipcode": "10462"}, 
+	"borough": "Bronx", 
+	"cuisine": "Bakery", 
+	"grades": [{"date": {"$date": 1393804800000}, "grade": "A", "score": 2}, {"date": {"$date": 1378857600000}, "grade": "A", "score": 6}, {"date": {"$date": 1358985600000}, "grade": "A", "score": 10}, {"date": {"$date": 1322006400000}, "grade": "A", "score": 9}, {"date": {"$date": 1299715200000}, "grade": "B", "score": 14}], "name": "Morris Park Bake Shop", "restaurant_id": "30075445"}

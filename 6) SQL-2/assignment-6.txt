@@ -1,0 +1,34 @@
+--Q1. show the details of the departments which have budgets more than the average budget across all departments. First show it without defining any function, then show it by defning a function avg_budget that return average budget across all departments. 
+
+
+
+
+
+
+--Q2. Create a trigger that will not allow to enter any record into the takes table with a grade that is not used before in any record in the takes table. 
+
+
+
+
+
+--Q3. Create a view to show the students names and their advisors names. 
+
+
+
+
+delimiter $$
+MariaDB [university]> create trigger check_gradees
+    -> before insert
+    -> on takes
+    -> for each row
+    -> begin
+    -> if @@session.foreign_key_checks=1 then
+    -> set session foreign_key_checks=0;
+    -> end if;
+    -> if (select grade from takes where new.grade=grade)
+    -> then insert into takes(ID, course_id,sec_id, semester,year,grade) values(new.ID,new.course_id,new.sec_id,new.semester,new.year,new.grade);
+    -> end if;
+    -> if @@session.foreign_key_checks=0 then
+    -> set session foreign_key_checks=1;
+    -> end if;
+    -> end$$
